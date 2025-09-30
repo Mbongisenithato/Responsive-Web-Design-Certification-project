@@ -1,0 +1,37 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ubuntu Veggie Stir-Fry</title>
+  </head>
+  <body>
+    <h1>Ubuntu Veggie Stir-Fry</h1>
+    <p>This vibrant stir-fry celebrates fresh vegetables, bold flavors, and the spirit of shared meals. Quick to make, easy to love—perfect for weeknights or community potlucks.</p>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li>2 tablespoons sesame oil</li>
+      <li>1 red bell pepper, sliced</li>
+      <li>1 cup broccoli florets</li>
+      <li>1/2 cup sliced carrots</li>
+      <li>2 cloves garlic, minced</li>
+      <li>2 tablespoons soy sauce</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol>
+      <li>Heat sesame oil in a large pan over medium-high heat.</li>
+      <li>Add garlic and sauté for 30 seconds until fragrant.</li>
+      <li>Toss in bell pepper, broccoli, and carrots. Stir-fry for 5–7 minutes.</li>
+      <li>Drizzle soy sauce over the veggies and cook for another 2 minutes.</li>
+      <li>Serve hot over rice or noodles. Garnish with sesame seeds if desired.</li>
+    </ol>
+
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="A colorful stir-fry dish with vegetables in a pan">
+  </body>
+</html>
+
+** end of index.html **
+

@@ -1,0 +1,47 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Travel Agency Page</title>
+    <meta name="description" content="Explore curated travel experiences with Ubuntu Voyages — from group adventures to private escapes.">
+  </head>
+  <body>
+    <h1>Ubuntu Voyages: Discover the World Together</h1>
+    <p>Welcome to Ubuntu Voyages, where every journey is crafted with care, connection, and unforgettable moments. Whether you're traveling solo or with a group, we’ve got the perfect itinerary for you.</p>
+
+    <h2>Packages</h2>
+    <p>Choose from our tailored travel packages designed to suit every kind of explorer:</p>
+    <ul>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+    </ul>
+
+    <h2>Top Itineraries</h2>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="The Colosseum in Rome at sunset">
+      </a>
+      <figcaption>Historic Rome: Walk through ancient wonders</figcaption>
+    </figure>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="Snow-covered Alps with hikers on a trail">
+      </a>
+      <figcaption>Alpine Escape: Breathe in the mountain air</figcaption>
+    </figure>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="Crystal-clear sea with a boat floating peacefully">
+      </a>
+      <figcaption>Island Serenity: Sail into turquoise bliss</figcaption>
+    </figure>
+  </body>
+</html>
+
+** end of index.html **
+

@@ -1,0 +1,231 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Fundamentals Documentation</title>
+    <meta name="description" content="A beginner-friendly guide to HTML fundamentals and best practices." />
+    <style>
+      /* Base Reset */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        background-color: #fdf6f0;
+        color: #333;
+        display: flex;
+      }
+
+      /* Navbar */
+      #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: #4e2a84;
+        color: white;
+        padding: 1rem;
+        overflow-y: auto;
+      }
+
+      #navbar header {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .nav-link {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin: 0.5rem 0;
+        font-weight: bold;
+      }
+
+      .nav-link:hover {
+        text-decoration: underline;
+      }
+
+      /* Main Content */
+      #main-doc {
+        margin-left: 270px;
+        padding: 2rem;
+        max-width: 800px;
+      }
+
+      .main-section {
+        margin-bottom: 2rem;
+      }
+
+      .main-section header {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: #e95420;
+      }
+
+      code {
+        display: block;
+        background-color: #eee;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+
+      /* Responsive Layout */
+      @media (max-width: 768px) {
+        body {
+          flex-direction: column;
+        }
+
+        #navbar {
+          position: relative;
+          width: 100%;
+          height: auto;
+          padding: 1rem;
+        }
+
+        #main-doc {
+          margin-left: 0;
+          padding: 1rem;
+        }
+
+        .nav-link {
+          margin: 0.25rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Fundamentals</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Elements_and_Tags">Elements and Tags</a>
+      <a class="nav-link" href="#Attributes">Attributes</a>
+      <a class="nav-link" href="#Semantic_HTML">Semantic HTML</a>
+      <a class="nav-link" href="#Forms_and_Inputs">Forms and Inputs</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>HTML stands for HyperText Markup Language and is the backbone of all web pages.</p>
+        <p>It structures content and defines elements like headings, paragraphs, links, and images.</p>
+        <p>HTML is not a programming language; it's a markup language.</p>
+        <p>Browsers read HTML to render content visually.</p>
+        <p>HTML documents start with a `<!DOCTYPE html>` declaration.</p>
+        <code>&lt;!DOCTYPE html&gt;</code>
+        <code>&lt;html lang="en"&gt;</code>
+        <code>&lt;head&gt;...&lt;/head&gt;</code>
+        <code>&lt;body&gt;...&lt;/body&gt;</code>
+        <code>&lt;title&gt;Page Title&lt;/title&gt;</code>
+        <ul>
+          <li>Defines structure</li>
+          <li>Used by all websites</li>
+          <li>Easy to learn</li>
+          <li>Works with CSS and JavaScript</li>
+          <li>Essential for accessibility</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Elements_and_Tags">
+        <header>Elements and Tags</header>
+        <p>HTML uses tags to define elements.</p>
+        <p>Tags are enclosed in angle brackets.</p>
+        <p>Most elements have opening and closing tags.</p>
+        <p>Some tags like `<img>` are self-closing.</p>
+        <p>Tags can be nested inside other tags.</p>
+        <code>&lt;h1&gt;Heading&lt;/h1&gt;</code>
+        <code>&lt;p&gt;Paragraph&lt;/p&gt;</code>
+        <code>&lt;a href="#"&gt;Link&lt;/a&gt;</code>
+        <code>&lt;img src="image.jpg" alt="description" /&gt;</code>
+        <code>&lt;div&gt;Container&lt;/div&gt;</code>
+        <ul>
+          <li>Opening tag</li>
+          <li>Closing tag</li>
+          <li>Self-closing tag</li>
+          <li>Nested elements</li>
+          <li>Block vs inline</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Attributes">
+        <header>Attributes</header>
+        <p>Attributes provide additional information about elements.</p>
+        <p>They are written inside the opening tag.</p>
+        <p>Common attributes include `id`, `class`, `src`, and `href`.</p>
+        <p>Attributes use key-value pairs.</p>
+        <p>They help with styling, scripting, and accessibility.</p>
+        <code>&lt;img src="logo.png" alt="Company Logo" /&gt;</code>
+        <code>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</code>
+        <code>&lt;div class="container"&gt;&lt;/div&gt;</code>
+        <code>&lt;input type="text" placeholder="Your name" /&gt;</code>
+        <code>&lt;section id="intro"&gt;&lt;/section&gt;</code>
+        <ul>
+          <li>Enhance functionality</li>
+          <li>Improve accessibility</li>
+          <li>Enable styling</li>
+          <li>Support interactivity</li>
+          <li>Used in forms</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Semantic_HTML">
+        <header>Semantic HTML</header>
+        <p>Semantic HTML uses meaningful tags to describe content.</p>
+        <p>Examples include `<header>`, `<footer>`, `<article>`, and `<section>`.</p>
+        <p>Improves accessibility and SEO.</p>
+        <p>Makes code easier to read and maintain.</p>
+        <p>Helps screen readers interpret content correctly.</p>
+        <code>&lt;header&gt;Site Header&lt;/header&gt;</code>
+        <code>&lt;nav&gt;Navigation Links&lt;/nav&gt;</code>
+        <code>&lt;main&gt;Main Content&lt;/main&gt;</code>
+        <code>&lt;article&gt;Blog Post&lt;/article&gt;</code>
+        <code>&lt;footer&gt;Site Footer&lt;/footer&gt;</code>
+        <ul>
+          <li>Descriptive tags</li>
+          <li>Better structure</li>
+          <li>Accessibility support</li>
+          <li>SEO benefits</li>
+          <li>Cleaner markup</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Forms_and_Inputs">
+        <header>Forms and Inputs</header>
+        <p>Forms collect user input and send it to a server.</p>
+        <p>Common input types include text, email, number, and checkbox.</p>
+        <p>Use `<form>` to wrap input fields.</p>
+        <p>Labels improve accessibility and usability.</p>
+        <p>Use `required`, `min`, and `max` for validation.</p>
+        <code>&lt;form action="/submit"&gt;&lt;/form&gt;</code>
+        <code>&lt;input type="text" required /&gt;</code>
+        <code>&lt;label for="email"&gt;Email&lt;/label&gt;</code>
+        <code>&lt;input type="number" min="1" max="10" /&gt;</code>
+        <code>&lt;textarea rows="4"&gt;&lt;/textarea&gt;</code>
+        <ul>
+          <li>Collect data</li>
+          <li>Validate input</li>
+          <li>Accessible labels</li>
+          <li>Multiple input types</li>
+          <li>Submit button</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+
